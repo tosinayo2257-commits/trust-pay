@@ -26,7 +26,7 @@ export default function Footer() {
           <Button
             type="submit"
             content="Send Request"
-            className="h-12 px-2 w-[150px] text-black bg-[#FFFFFF] font-semibold"
+            className="h-12 px-2 w-[150px] bg-[#FFFFFF] hover:text-[#FFFFFF] font-semibold"
           />
         </div>
       </div>
@@ -71,9 +71,11 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col md:items-end gap-5">
-            <button className="bg-indigo-600 text-white px-6 py-2 rounded-xl shadow-md hover:bg-indigo-700 transition">
-              Request a call
-            </button>
+            <Button
+              type="submit"
+              content="Request a call"
+              className=" text-white px-6 py-2 rounded-xl shadow-md  transition"
+            />
             <div className="text-gray-800 text-right space-y-1">
               <p className="font-medium">+1 (999) 999-99-99</p>
               <p className="text-gray-600">info@trustpay.com</p>

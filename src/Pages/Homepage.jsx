@@ -2,7 +2,7 @@ import React from "react";
 import Applayout from "../Layout/Applayout";
 import Experiencces from "../Component/HomepageComponent/Experiencces";
 import Build from "../Component/HomepageComponent/Build";
-import Works from "../Component/HomepageComponent/Work";
+import Works from "../Component/HomepageComponent/HowItWork";
 import Frequently from "../Component/HomepageComponent/Frequently";
 import WhyTrustPay from "../Component/HomepageComponent/WhyTrustPay";
 import Deals from "../Component/HomepageComponent/Deals";

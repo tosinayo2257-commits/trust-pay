@@ -1,5 +1,6 @@
 import React from "react";
 import Raw from "../../assets/Raw.png";
+import Button from "../Button";
 
 export default function Deals() {
   return (
@@ -43,7 +44,7 @@ export default function Deals() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#FFFFFF] text-[#362FF6] w-8 h-8 flex items-center justify-center rounded-lg font-bold">
+                  <div className="bg-[#FFFFFF] text-[#6362FF] w-8 h-8 flex items-center justify-center rounded-lg font-bold">
                     ✓
                   </div>
                   <p>
@@ -55,10 +56,11 @@ export default function Deals() {
                   </p>
                 </div>
               </div>
-
-              <button className="bg-[#FFFFFF] text-[#362FF6] font-semibold hover:bg-[#362FF6] hover:text-[#FFFFFF] px-6 py-3 rounded-xl shadow-md transition">
-                Get Started for Free
-              </button>
+              <Button
+                type="submit"
+                content="Get Started for Free"
+                className="h-12 px-2 w-[180px] bg-[#FFFFFF] text-[#6362FF] hover:text-[#FFFFFF] font-semibold"
+              />
             </div>
 
             <div className="h-100">

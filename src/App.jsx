@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 
 import "./App.css";
 import Footer from "./Component/Footer";
 import Header from "./Component/Header";
 import Homepage from "./Pages/Homepage";
 import Build from "./Component/HomepageComponent/Build";
-import Work from "./Component/HomepageComponent/Work";
+import Work from "./Component/HomepageComponent/HowItWork";
 import Features from "./Component/HomepageComponent/Features";
 import Deals from "./Component/HomepageComponent/Deals";
 
 function App() {
   return (
-    <div>
-      <Homepage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </Router>
   );
 }
 

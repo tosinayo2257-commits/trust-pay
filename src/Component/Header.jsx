@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
 import { IoIosMenu } from "react-icons/io";
+import Button from "./Button";
 
 export default function Header() {
   return (
@@ -26,12 +27,17 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex gap-5">
-          <button className="px-5 py-2 rounded-xl bg-[#DEDEF2] text-[#362FF6] hover:bg-[#362FF6] hover:text-[#FFFFFF] transition">
-            Log In
-          </button>
-          <button className="px-5 py-2 rounded-xl bg-[#DEDEF2] text-[#362FF6] hover:bg-[#362FF6] hover:text-[#FFFFFF] transition shadow-md">
-            Sign Up
-          </button>
+          <Button
+            type="submit"
+            content="Log In"
+            className=" text-white px-6 py-2 rounded-xl shadow-md  transition"
+          />
+
+          <Button
+            type="submit"
+            content="Sign Up"
+            className=" text-white px-6 py-2 rounded-xl shadow-md  transition"
+          />
         </div>
         <div></div>
       </div>

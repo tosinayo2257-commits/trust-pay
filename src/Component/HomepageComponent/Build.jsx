@@ -32,9 +32,16 @@ export default function build() {
               your work, we'll handle the trust.
             </p>
           </div>
-          <div className="bg-[#362FF6] text-[#FFFFFF] w-[198px] hover:bg-[#000000] rounded-2xl flex gap-0  ">
-            <button className=" py-3 px-5">Get Started Now</button>
-            <span className="pt-4">{<IoIosArrowForward />}</span>
+          <div className=" text-[#FFFFFF] w-[198px]  rounded-2xl   ">
+            <Button
+              type="submit"
+              content={
+                <span className="flex gap-3">
+                  Get Started Now <IoIosArrowForward />
+                </span>
+              }
+              className=" text-[#FFFFFF] px-6 py-2 rounded-xl shadow-md transition"
+            />
           </div>
         </div>
         <div className="">

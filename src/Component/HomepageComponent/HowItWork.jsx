@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import step1 from "../../assets/Step1.png";
 import step2 from "../../assets/Step2.png";
 import step3 from "../../assets/Step3.png";
@@ -60,15 +61,18 @@ const Step = ({ step, reverse }) => {
           {step.title}
         </h3>
         <p className="text-[#272D37CC] leading-relaxed">{step.description}</p>
-        <button className="bg-[#362FF6] hover:bg-[#000000] text-white px-6 py-3 rounded-xl transition">
-          Get Started
-        </button>
+
+        <Button
+          type="submit"
+          content="Get Started"
+          className=" text-white px-6 py-2 rounded-xl shadow-md  transition"
+        />
       </div>
     </div>
   );
 };
 
-export default function Works() {
+export default function HowItWorks() {
   return (
     <section className="bg-[#FFFFFF] py-24 md:px-16 hidden md:flex flex-col">
       <div className="max-w-6xl mx-auto text-center mb-20">

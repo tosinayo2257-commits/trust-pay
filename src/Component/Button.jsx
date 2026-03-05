@@ -12,20 +12,12 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${className} flex flex-row items-center bg-[#6C4CF1] hover:bg-[#5f3ce7] cursor-pointer justify-center rounded-md`}
+      className={`${className} flex flex-row items-center bg-[#362FF6] hover:bg-[#000000] cursor-pointer justify-center rounded-[10px]`}
     >
       {content}
     </button>
   );
 }
-
-//Button.propTypes = {
-//className: PropTypes.string,
-//content: PropTypes.node.isRequired,
-//onClick: PropTypes.func,
-//disabled: PropTypes.bool,
-//type: PropTypes.oneOf(["button", "submit", "reset"]),
-//s};
 
 Button.defaultProps = {
   className: "",
