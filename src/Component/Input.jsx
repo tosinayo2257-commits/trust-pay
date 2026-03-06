@@ -21,13 +21,3 @@ export default function Input({
     />
   );
 }
-
-//Input.PropTypes = {
-//  type: PropTypes.node.isRequired,
-//  id: PropTypes.node.isRequired,
-// className: PropTypes.node.isRequired,
-// placeholder: PropTypes.node.isRequired,
-// value: PropTypes.node.isRequired,
-// name: PropTypes.node.isRequired,
-//onChange: PropTypes.node.isRequired,
-//};

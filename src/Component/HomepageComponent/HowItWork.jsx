@@ -55,7 +55,6 @@ const Step = ({ step, reverse }) => {
         </div>
       </div>
 
-      {/* Text */}
       <div className={`${reverse ? " w-[340px]" : ""}`}>
         <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#000000]">
           {step.title}

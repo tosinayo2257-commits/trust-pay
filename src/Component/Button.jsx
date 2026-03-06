@@ -12,7 +12,7 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${className} flex flex-row items-center bg-[#362FF6] hover:bg-[#000000] cursor-pointer justify-center rounded-[10px]`}
+      className={`${className} flex flex-row items-center bg-[#362FF6] hover:bg-[#03022A] cursor-pointer justify-center rounded-[10px]`}
     >
       {content}
     </button>
