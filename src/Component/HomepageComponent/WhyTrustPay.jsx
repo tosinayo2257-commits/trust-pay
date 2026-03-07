@@ -4,7 +4,7 @@ import Hand from "../../assets/Hand.png";
 
 export default function WhyTrustPay() {
   return (
-    <section className="max-w-7xl mx-auto px-9 py-80 md:px-10 py-20">
+    <section className="max-w-7xl mx-auto px-9 py-8 md:px-10 py-20">
       {/* Heading */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Why TrustPay?</h1>
@@ -18,8 +18,8 @@ export default function WhyTrustPay() {
       {/* Features Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Feature 1 */}
-        <div className="rounded-3xl bg-[#362FF6] px-6 py-5 flex flex-col items-center ">
-          <h2 className="text-3xl font-bold mb-4 text-white">
+        <div className="rounded-3xl bg-[#362FF6] px-6  flex flex-col  items-center ">
+          <h2 className="text-3xl font-bold mb-4 mt-5 text-white">
             Clear Milestone Management
           </h2>
           <p className="text-[#FFFFFFB2] mb-6">
@@ -36,8 +36,8 @@ export default function WhyTrustPay() {
         </div>
 
         {/* Feature 2 */}
-        <div className="rounded-3xl bg-[#DEDEF2] px-5 py-5 flex flex-col items-center">
-          <h2 className="text-3xl font-bold mb-4 text-black">
+        <div className="rounded-3xl bg-[#DEDEF2] px-5  flex flex-col items-center">
+          <h2 className="text-3xl font-bold mb-4 mt-5 text-black">
             Guaranteed Payment Security
           </h2>
           <p className="text-gray-700 mb-6 ">
@@ -47,7 +47,7 @@ export default function WhyTrustPay() {
             for incomplete jobs.
           </p>
           <img
-            className=" w-full max-w-sm "
+            className="mt-2 max-w-sm rounded-lg object-contain"
             src={Hand}
             alt="Illustration of payment security"
           />
