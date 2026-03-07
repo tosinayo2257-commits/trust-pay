@@ -5,41 +5,60 @@ import Button from "./Button";
 
 export default function Header() {
   return (
-    <header className="w-full bg-[#FFFFFF] py-4">
-      <div className=" mx-auto flex items-center justify-between">
-        <div className="flex items-center md:gap-0 py-5 w-[365px]">
-          <div className="w-95 h-10 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-            <img src={Logo} alt="" />
+    <header className="bg-[#FFFFFF] max-w-[1340px] mx-auto  py-4 md:py-5 mt-3  sticky top-0 z-50">
+      <div className="max-w-[1140px] mx-auto flex items-center justify-between px-1 md:px-0">
+        {/* Logo + Mobile Menu */}
+        <div className="flex items-center gap-45 md:gap-6">
+          <div className="h-10 w-[136px] flex items-center max-w-[">
+            <img
+              src={Logo}
+              alt="TrustPay Logo"
+              className="h-full max-w-[210px] mx-auto object-contain"
+            />
           </div>
-          <div className="flex block lg:hidden">
-            <span>
-              <IoIosMenu />
-            </span>
+          <div className="flex md:hidden">
+            <IoIosMenu size={28} className="text-[#000022]" />
           </div>
         </div>
 
-        <div className="hidden md:flex items-center gap-6">
-          <h1 className="text-black font-medium hover:text-[#362FF6]">Home</h1>
-          <h2 className="text-black font-medium hover:text-[#362FF6]">FAQs</h2>
-          <h3 className="text-black font-medium hover:text-[#362FF6]">
-            Contact
-          </h3>
-        </div>
+        {/* Navigation + Buttons */}
+        <div className="flex items-center gap-4 md:gap-60">
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center gap-8">
+            <a
+              href="#home"
+              className="text-[#000022] font-medium hover:text-[#362FF6] transition"
+            >
+              Home
+            </a>
+            <a
+              href="#faqs"
+              className="text-[#000022] font-medium hover:text-[#362FF6] transition"
+            >
+              FAQs
+            </a>
+            <a
+              href="#contact"
+              className="text-[#000022] font-medium hover:text-[#362FF6] transition"
+            >
+              Contact
+            </a>
+          </nav>
 
-        <div className="hidden md:flex gap-5">
-          <Button
-            type="submit"
-            content="Log In"
-            className=" text-white px-6 py-2 rounded-xl shadow-md  transition"
-          />
-
-          <Button
-            type="submit"
-            content="Sign Up"
-            className=" text-white px-6 py-2 rounded-xl shadow-md  transition"
-          />
+          {/* Buttons */}
+          <div className="hidden md:flex gap-4">
+            <Button
+              type="button"
+              content="Log In"
+              className="bg-[#362FF6] text-[#FFFFFF] px-6 py-2 rounded-xl shadow-md transition hover:bg-[#000022]"
+            />
+            <Button
+              type="button"
+              content="Sign Up"
+              className="bg-[#362FF6] text-[#FFFFFF] px-6 py-2 rounded-xl shadow-md transition hover:bg-[#000022]"
+            />
+          </div>
         </div>
-        <div></div>
       </div>
     </header>
   );

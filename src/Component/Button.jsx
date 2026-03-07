@@ -12,16 +12,12 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${className} flex flex-row items-center bg-[#362FF6] hover:bg-[#03022A] cursor-pointer justify-center rounded-[10px]`}
+      className={`flex items-center justify-center rounded-[10px] bg-[#362FF6] text-white px-4 py-2 
+                  hover:bg-[#03022A] transition-colors duration-200 
+                  ${disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"} 
+                  ${className}`}
     >
       {content}
     </button>
   );
 }
-
-Button.defaultProps = {
-  className: "",
-  onClick: undefined,
-  disabled: false,
-  type: "button",
-};
