@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "../Button";
-import step1 from "../../assets/iphone 14.png";
-import step2 from "../../assets/iphone 14 mini.png";
+import step1 from "../../assets/iphone-14.png";
+import step2 from "../../assets/iphone-14-mini.png";
 import step3 from "../../assets/View.png";
-import step4 from "../../assets/iphone 13 mini.png";
+import step4 from "../../assets/iphone-13-mini.png";
 
 const steps = [
   {
