@@ -9,28 +9,25 @@ import { IoIosArrowForward } from "react-icons/io";
 
 export default function Build() {
   return (
-    <section className="px-6 md:px-16 mb-12 max-w-[1440px] mx-auto flex flex-col justify-center md:flex items-center">
-      {/* Hero Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-9">
-        {/* Text Section */}
-        <div className="flex flex-col sm:justify-center">
-          <h2 className="flex flex-wrap items-center text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D0D0D] gap-2">
+    <section className="px-6 md:px-16 mb-10 max-w-[1440px] mx-auto flex flex-col items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-9 w-full">
+        <div className="mb-20 flex flex-col items-center md:items-start">
+          <h2 className="flex flex-wrap items-center justify-center md:justify-start text-4xl sm:text-5xl md:text-6xl font-bold text-[#0D0D0D] gap-2">
             Build
             <img
-              className="py-2 px-2 w-[120px] sm:w-[150px] md:w-[220px]"
+              className="py-2 px-2  w-[150px] md:w-[220px]"
               src={trust}
               alt="Trust"
             />
             in
           </h2>
 
-          <p className="text-4xl sm:text-4xl md:text-6xl font-bold text-[#0D0D0D] mt-0">
+          <p className="text-4xl md:text-6xl font-bold text-[#0D0D0D]">
             Every Transaction.
           </p>
 
-          <p className="mt-4 sm:mt-6 text-[#000000B2] max-w-full sm:max-w-[555px] py-2 sm:py-4 font-medium text-sm sm:text-base">
-            Your all-in-one platform for digital agreements, milestone-based{" "}
-            <br />
+          <p className="mt-4 sm:mt-3 text-[#000000B2] max-w-[565px] text-center md:text-start py-2 md:py-2 font-semibold text-sm sm:text-base">
+            Your all-in-one platform for digital agreements, milestone-based
             payments held in escrow, and swift dispute resolution. Focus on your
             work, we'll handle the trust.
           </p>
@@ -39,7 +36,7 @@ export default function Build() {
             <Button
               type="submit"
               content={
-                <span className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
+                <span className="flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base">
                   Get Started Now <IoIosArrowForward />
                 </span>
               }
@@ -48,8 +45,7 @@ export default function Build() {
           </div>
         </div>
 
-        {/* Image Section */}
-        <div className="flex justify-center md:justify-end">
+        <div className="mb-25 flex justify-center md:justify-end">
           <img
             src={Clip}
             alt="Hero illustration"
@@ -58,29 +54,30 @@ export default function Build() {
         </div>
       </div>
 
-      {/* Download Section */}
-      <div className="py-5 px-1 grid grid-cols-1  sm:grid-cols-3 gap-6 sm:gap-4 max-w-[600px] mx-auto">
-        <div className="flex items-center gap-3">
-          <img src={Apple} alt="App Store" className="w-10 sm:w-12" />
-          <div>
-            <p className="text-sm text-[#000000]">Download on the</p>
-            <h4 className="font-bold text-[#000000]">App Store</h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 items-center justify-items-center md:justify-items-start">
+          <div className="flex items-center gap-3 text-center md:text-left">
+            <img src={Apple} alt="App Store" className="w-10" />
+            <div>
+              <p className="text-sm text-[#000000]">Download on the</p>
+              <h4 className="font-bold text-[#000000]">App Store</h4>
+            </div>
           </div>
-        </div>
 
-        <div className="flex items-center gap-3">
-          <img src={Playstore} alt="Google Play" className="w-10 sm:w-12" />
-          <div>
-            <p className="text-sm text-[#000000]">Get it on</p>
-            <h4 className="font-bold text-[#000000]">Google Play</h4>
+          <div className="flex items-center gap-3 text-center md:text-left">
+            <img src={Playstore} alt="Google Play" className="w-10" />
+            <div>
+              <p className="text-sm text-[#000000]">Get it on</p>
+              <h4 className="font-bold text-[#000000]">Google Play</h4>
+            </div>
           </div>
-        </div>
 
-        <div className="flex items-center gap-3">
-          <img src={globe} alt="Web version" className="w-10 sm:w-12" />
-          <div>
-            <p className="text-sm text-[#000000]">Available on the</p>
-            <h4 className="font-bold text-[#000000]">Web</h4>
+          <div className="flex items-center gap-3 text-center md:text-left">
+            <img src={globe} alt="Web version" className="w-10" />
+            <div>
+              <p className="text-sm text-[#000000]">Available on the</p>
+              <h4 className="font-bold text-[#000000]">Web</h4>
+            </div>
           </div>
         </div>
       </div>

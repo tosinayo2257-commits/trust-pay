@@ -9,13 +9,12 @@ import { Link } from "react-router";
 export default function Footer() {
   return (
     <footer className="bg-[#03022A] pb-6 px-4 md:px-10 flex flex-col items-center gap-7">
-      {/* Question Section */}
       <div className="bg-[#362FF6] text-center w-full max-w-[870px] rounded-b-[24px]  py-10 px-4">
-        <h1 className="text-2xl md:text-[28px] text-white font-semibold">
+        <h1 className="text-2xl md:text-[28px] text-[#FFFF] font-semibold">
           Do you have any questions?
         </h1>
 
-        <p className="text-white py-3 max-mx-auto">
+        <p className="text-[#FFFF] py-3 max-mx-auto">
           Can’t find the answer you’re looking for? Reach out to us and we will
           provide detailed information.
         </p>
@@ -23,21 +22,19 @@ export default function Footer() {
         <div className="flex flex-row md:flex-row items-center justify-center gap- mt-4">
           <Input
             type="text"
-            className="h-12 w-[239px] md:w-[449px] text-black px-3 rounded-lg"
+            className="h-12 w-[239px] md:w-[449px] text-[#FFFFFF] px-3 rounded-lg"
             placeholder="Enter Question"
           />
 
           <Button
             type="submit"
             content="Send Request"
-            className="h-12 w-[126px] text- md:w-[150px] bg-black text-[#FFFF] font-semibold"
+            className="h-12 w-[116px]  md:w-[150px] bg-[#FFFF] text-[12px] md:text-[15px] text-[#362FF6] font-semibold"
           />
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="bg-white rounded-[20px] w-full max-w-5xl md:w-full max-w-6xl flex flex-col md:flex-row justify-between gap-10 p-5">
-        {/* Logo + Social */}
+      <div className="bg-[#FFFF] rounded-[20px] w-full max-w-5xl md:w-full max-w-6xl flex flex-col md:flex-row justify-between gap-10 p-5">
         <div className="flex flex-col items-start md:items-start gap-4 md:gap-1">
           <img src={Logo} alt="TrustPay Logo" className="w-[210px]" />
 
@@ -47,7 +44,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Quick Links */}
         <div className="text-start md:text-center font-bold">
           <h3 className="text-sm font-semibold text-gray-800 tracking-wider mb-4">
             QUICK LINKS
@@ -72,12 +68,11 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div className="flex flex-col items-start md:items-end gap-3 md:gap-5">
           <Button
             type="button"
             content="Request a call"
-            className="bg-[#362FF6] text-white px-6 py-2 rounded-xl shadow-md hover:bg-[#03022A]"
+            className="bg-[#362FF6] text-[#FFFF] px-4 md:px-6 py-2 rounded-xl shadow-md hover:bg-[#03022A]"
           />
 
           <div className="text-black text-center md:text-right font-bold">

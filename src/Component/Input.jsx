@@ -13,7 +13,7 @@ export default function Input({
     <input
       type={type}
       id={id}
-      className={`${className} py-3 px-3 border border-[#FFFFFF33] border-1 rounded-md`}
+      className={`${className} py-3 px-3 border border-[#FFFFFF33] text-[#FFFFFF] border-1 rounded-md`}
       placeholder={placeholder}
       value={value}
       name={name}

@@ -18,7 +18,6 @@ export default function Experiences() {
         </p>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 py-2 md:p-6 mt-10">
-          {/* Card 1 */}
           <div className="bg-[#DEDEF2] rounded-3xl p-10 text-left shadow-sm">
             <div className="text-[#362FF6] text-6xl leading-none">
               <VscQuote />
@@ -47,7 +46,6 @@ export default function Experiences() {
             </div>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-[#DEDEF2] rounded-3xl p-10 text-left shadow-sm">
             <div className="text-[#362FF6] text-6xl leading-none">
               <VscQuote />

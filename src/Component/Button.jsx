@@ -12,8 +12,8 @@ export default function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`flex items-center justify-center rounded-[10px] bg-[#362FF6] text-white px-4 py-2 
-                  hover:bg-[#03022A] transition-colors duration-200 
+      className={`flex items-center justify-center rounded-[10px] bg  px-4 py-2 
+                   transition-colors duration-200 
                   ${disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"} 
                   ${className}`}
     >

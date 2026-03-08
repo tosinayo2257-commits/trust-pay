@@ -1,10 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 import Button from "../Button";
-import step1 from "../../assets/iphone-14.png";
-import step2 from "../../assets/iphone-14-mini.png";
+import step1 from "../../assets/iPhone-13.png";
+import step2 from "../../assets/iPhone-14-mini.png";
 import step3 from "../../assets/View.png";
-import step4 from "../../assets/iphone-13-mini.png";
+import step4 from "../../assets/iphone-2.png";
 
 const steps = [
   {
@@ -39,33 +39,29 @@ const steps = [
 
 const Step = ({ step, reverse }) => {
   return (
-    <motion.div
+    <div
       className="relative grid md:grid-cols-2 items-center gap-8 py-12"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      {/* Timeline line */}
-      <div className="hidden md:block absolute left-1/2 top-0 h-full w-[2px] bg-gray-300" />
+      <div className="hidden md:block absolute left-1/2 top-2 border-1 h-full w-[2px] bg-[#FFFF]" />
 
-      {/* Step number */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-black text-white w-10 h-10 rounded-full hidden md:flex items-center justify-center font-semibold shadow-lg">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-black text-[#FFFF] w-10 h-10 rounded-full hidden md:flex items-center justify-center font-semibold shadow-lg">
         {step.id}
       </div>
 
-      {/* Image */}
       <div className={`${reverse ? "md:order-2" : ""} flex justify-center`}>
-        <div className="rounded-3xl bg-[#362FF6] flex justify-center w-full max-w-[384px]">
+        <div className="rounded-3xl bg-[#362FF6] flex justify-center w-full max-w-[394px]">
           <img
             src={step.image}
             alt={step.title}
-            className="rounded-xl px-6 mb-10 h-auto"
+            className="rounded-xl px-20 mb-10 "
           />
         </div>
       </div>
 
-      {/* Text */}
       <div className="text-start md:flex flex-col justify-center pl-0 md:pl-18 w-full max-w-[420px] mx-auto md:mx-0">
         <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">
           {step.title}
@@ -75,16 +71,16 @@ const Step = ({ step, reverse }) => {
         <Button
           type="submit"
           content="Get Started"
-          className="bg-[#362FF6] text-white w-full max-w-[140px] rounded-xl shadow-md transition hover:bg-gray-900"
+          className="bg-[#362FF6] text-[#FFFF] w-full max-w-[140px] rounded-xl shadow-md transition hover:bg-gray-900"
         />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
 export default function HowItWorks() {
   return (
-    <section className="bg-white py-24 px-6 md:px-16">
+    <section className="bg-[#FFFF] py-24 px-6 md:px-16">
       <div className="max-w-6xl mx-auto text-center mb-20">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
           How It Works
