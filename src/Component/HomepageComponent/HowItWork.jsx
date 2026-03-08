@@ -4,7 +4,7 @@ import Button from "../Button";
 import step1 from "../../assets/iPhone-13.png";
 import step2 from "../../assets/iPhone-14-mini.png";
 import step3 from "../../assets/View.png";
-import step4 from "../../assets/iphone-2.png";
+import step4 from "../../assets/iPhone-2.png";
 
 const steps = [
   {
