@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex flex-row md:flex-row items-center justify-center mt-2 md:mt-4">
           <Input
             type="text"
-            className="h-12 w-[239px] md:w-[449px] text-[#FFFFFF] px-3 rounded-lg"
+            className="h-12 w-[239px] md:w-[449px] text-white px-3 rounded-lg"
             placeholder="Enter Question"
           />
 
