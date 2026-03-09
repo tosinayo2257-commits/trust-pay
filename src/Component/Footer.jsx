@@ -8,8 +8,8 @@ import { Link } from "react-router";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#03022A] pb-6 px-4 md:px-10 flex flex-col items-center gap-7">
-      <div className="bg-[#362FF6] text-center w-full max-w-[870px] rounded-b-[24px]  py-10 px-4">
+    <footer className="bg-[#03022A] mt-10 md:mt-20 pb-5 px-4 md:px-10 flex flex-col items-center gap-7">
+      <div className="bg-[#362FF6] text-center w-full max-w-[870px] rounded-b-[24px] mb-2 md:mb-5 py-2 md:py-15 px-4">
         <h1 className="text-2xl md:text-[28px] text-[#FFFF] font-semibold">
           Do you have any questions?
         </h1>
@@ -19,7 +19,7 @@ export default function Footer() {
           provide detailed information.
         </p>
 
-        <div className="flex flex-row md:flex-row items-center justify-center gap- mt-4">
+        <div className="flex flex-row md:flex-row items-center justify-center mt-2 md:mt-4">
           <Input
             type="text"
             className="h-12 w-[239px] md:w-[449px] text-[#FFFFFF] px-3 rounded-lg"
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-[#FFFF] rounded-[20px] w-full max-w-5xl md:w-full max-w-6xl flex flex-col md:flex-row justify-between gap-10 p-5">
+      <div className="bg-[#FFFF] mb-2 md:mb-5 rounded-[20px] w-full max-w-5xl md:w-full max-w-6xl flex flex-col md:flex-row justify-between gap-10 p-5 md:p-10">
         <div className="flex flex-col items-start md:items-start gap-4 md:gap-1">
           <img src={Logo} alt="TrustPay Logo" className="w-[210px]" />
 
@@ -50,21 +50,25 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-2 text-black">
-            <li>
-              <Link to="/" className="hover:text-indigo-600 transition">
+            <Link to="/">
+              {" "}
+              <li className="hover:text-indigo-600 cursor-pointer transition">
                 Home
-              </Link>
-            </li>
+              </li>
+            </Link>
 
-            <li>
-              <Link to="/faq" className="hover:text-indigo-600 transition">
+            <Link to="/faq">
+              <li className="hover:text-indigo-600 cursor-pointer transition">
                 FAQ
-              </Link>
-            </li>
+              </li>
+            </Link>
 
-            <li className="hover:text-indigo-600 cursor-pointer transition">
-              Contacts
-            </li>
+            <Link to="/con">
+              {" "}
+              <li className="hover:text-indigo-600 cursor-pointer transition">
+                Contacts
+              </li>
+            </Link>
           </ul>
         </div>
 

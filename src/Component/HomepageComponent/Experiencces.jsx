@@ -5,9 +5,9 @@ import { VscQuote } from "react-icons/vsc";
 
 export default function Experiences() {
   return (
-    <div className="max-w-7xl mx-auto md:flex flex-col">
-      <div className="py-16 px-8">
-        <h2 className="text-4xl md:text-5xl flex justify-center font-bold text-[#0D0D0D] text-center">
+    <div className="max-w-5xl md:max-w-7xl mx-auto md:flex flex-col">
+      <div className="py-5 px-5 md:px-8">
+        <h2 className="text-[20px] md:md:text-[50px] flex justify-center font-bold text-[#0D0D0D] text-center">
           Experiences Shared by Our Users
         </h2>
 
@@ -18,7 +18,7 @@ export default function Experiences() {
         </p>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 py-2 md:p-6 mt-10">
-          <div className="bg-[#DEDEF2] rounded-3xl p-10 text-left shadow-sm">
+          <div className="bg-[#DEDEF2] rounded-3xl p-2 md:p-8 text-left shadow-sm">
             <div className="text-[#362FF6] text-6xl leading-none">
               <VscQuote />
             </div>
@@ -46,7 +46,7 @@ export default function Experiences() {
             </div>
           </div>
 
-          <div className="bg-[#DEDEF2] rounded-3xl p-10 text-left shadow-sm">
+          <div className="bg-[#DEDEF2] rounded-3xl p-2 md:p-8 text-left shadow-sm">
             <div className="text-[#362FF6] text-6xl leading-none">
               <VscQuote />
             </div>
