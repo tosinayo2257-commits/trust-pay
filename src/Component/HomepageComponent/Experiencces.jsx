@@ -5,76 +5,76 @@ import { VscQuote } from "react-icons/vsc";
 
 export default function Experiences() {
   return (
-    <div className="max-w-5xl md:max-w-7xl mx-auto md:flex flex-col">
-      <div className="py-5 px-5 md:px-8">
-        <h2 className="text-[20px] md:md:text-[50px] flex justify-center font-bold text-[#0D0D0D] text-center">
+    <section className="max-w-[1140px] mx-auto px-4 py-16">
+      {/* Section Header */}
+      <div className="text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#0D0D0D]">
           Experiences Shared by Our Users
         </h2>
 
-        <p className="mt-6 text-[#000000B2] max-w-[700px] text-center mx-auto">
-          The team at Trade trust provided unparalleled support throughout our
+        <p className="mt-4 text-[#000000B2] max-w-[700px] mx-auto text-sm sm:text-base">
+          The team at TradeTrust provided unparalleled support throughout our
           project. Their expertise and dedication were evident from day one,
           helping us navigate complex challenges.
         </p>
+      </div>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 py-2 md:p-6 mt-10">
-          <div className="bg-[#DEDEF2] rounded-3xl p-2 md:p-8 text-left shadow-sm">
-            <div className="text-[#362FF6] text-6xl leading-none">
-              <VscQuote />
-            </div>
-
-            <p className="mt-6 text-[#000000] leading-relaxed">
-              As a long-time user of WDK AI ToolKit, I can confidently say that
-              their solutions have revolutionised the way we operate. From the
-              outset, the team provided exceptional support and demonstrated a
-              deep understanding.
-            </p>
-
-            <div className="mt-8 flex items-center gap-4">
-              <img
-                src={Vector1}
-                alt="Artemisia Udinse"
-                className="w-12 h-12 rounded-full object-cover"
-              />
-
-              <div>
-                <h4 className="font-semibold text-[#0D0D0D]">
-                  Artemisia Udinse
-                </h4>
-                <p className="text-sm text-[#808080]">Marketing Specialist</p>
-              </div>
-            </div>
+      {/* Testimonials */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        {/* Card 1 */}
+        <div className="bg-[#DEDEF2] rounded-3xl p-6 md:p-8 shadow-sm">
+          <div className="text-[#362FF6] text-4xl md:text-5xl">
+            <VscQuote />
           </div>
 
-          <div className="bg-[#DEDEF2] rounded-3xl p-2 md:p-8 text-left shadow-sm">
-            <div className="text-[#362FF6] text-6xl leading-none">
-              <VscQuote />
+          <p className="mt-4 text-[#000000] text-sm sm:text-base leading-relaxed">
+            As a long-time user of WDK AI ToolKit, I can confidently say that
+            their solutions have revolutionised the way we operate. From the
+            outset, the team provided exceptional support and demonstrated a
+            deep understanding.
+          </p>
+
+          <div className="mt-6 flex items-center gap-4">
+            <img
+              src={Vector1}
+              alt="Artemisia Udinse"
+              className="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div>
+              <h4 className="font-semibold text-[#0D0D0D]">Artemisia Udinse</h4>
+              <p className="text-sm text-[#808080]">Marketing Specialist</p>
             </div>
+          </div>
+        </div>
 
-            <p className="mt-6 text-[#000000] leading-relaxed">
-              As a long-time user of WDK AI ToolKit, I can confidently say that
-              their solutions have revolutionised the way we operate. From the
-              outset, the team provided exceptional support and demonstrated a
-              deep understanding.
-            </p>
+        {/* Card 2 */}
+        <div className="bg-[#DEDEF2] rounded-3xl p-6 md:p-8 shadow-sm">
+          <div className="text-[#362FF6] text-4xl md:text-5xl">
+            <VscQuote />
+          </div>
 
-            <div className="mt-8 flex items-center gap-4">
-              <img
-                src={Vector2}
-                alt="Artemisia Udinse"
-                className="w-12 h-12 rounded-full object-cover"
-              />
+          <p className="mt-4 text-[#000000] text-sm sm:text-base leading-relaxed">
+            As a long-time user of WDK AI ToolKit, I can confidently say that
+            their solutions have revolutionised the way we operate. From the
+            outset, the team provided exceptional support and demonstrated a
+            deep understanding.
+          </p>
 
-              <div>
-                <h4 className="font-semibold text-[#0D0D0D]">
-                  Artemisia Udinse
-                </h4>
-                <p className="text-sm text-[#808080]">Marketing Specialist</p>
-              </div>
+          <div className="mt-6 flex items-center gap-4">
+            <img
+              src={Vector2}
+              alt="Artemisia Udinse"
+              className="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div>
+              <h4 className="font-semibold text-[#0D0D0D]">Artemisia Udinse</h4>
+              <p className="text-sm text-[#808080]">Marketing Specialist</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
