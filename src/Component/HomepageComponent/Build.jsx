@@ -11,18 +11,18 @@ export default function Build() {
   return (
     <section className="px-5 md:px-16 py-5 max-w-[1440px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full">
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h2 className="flex flex-wrap items-center justify-center md:justify-start text-3xl sm:text-4xl md:text-6xl font-bold text-[#0D0D0D] gap-2 leading-tight">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left order-1 mb-10">
+          <h2 className="flex flex-wrap items-center justify-center md:justify-start text-4xl md:text-6xl font-bold text-[#0D0D0D] gap-2 leading-tight">
             Build
             <img
               src={trust}
               alt="Trust icon"
-              className="w-[120px] sm:w-[150px] md:w-[200px]"
+              className="w-[150px] md:w-[200px]"
             />
             in
           </h2>
 
-          <p className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#0D0D0D] leading-tight">
+          <p className="text-4xl md:text-6xl font-bold text-[#0D0D0D] leading-tight">
             Every Transaction.
           </p>
 
@@ -32,7 +32,7 @@ export default function Build() {
             work, we'll handle the trust.
           </p>
 
-          <div className="mt-6 w-[220px] sm:w-[220px]">
+          <div className="mt-7 w-[220px]">
             <Button
               type="submit"
               content={
@@ -43,44 +43,44 @@ export default function Build() {
               className="text-white bg-[#362FF6] px-6 py-3 rounded-xl shadow-md transition hover:bg-black w-full"
             />
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 py-15 w-full max-w-[500px] justify-items-center md:justify-items-start text-center md:text-left">
-            <div className="flex items-center gap-3">
-              <img src={Apple} alt="Download on App Store" className="w-10" />
-              <div>
-                <p className="text-xs text-[#000000]">Download on the</p>
-                <h4 className="font-semibold text-[#000000]">App Store</h4>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <img
-                src={Playstore}
-                alt="Download on Google Play"
-                className="w-10"
-              />
-              <div>
-                <p className="text-xs text-[#000000]">Get it on</p>
-                <h4 className="font-semibold text-[#000000]">Google Play</h4>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <img src={globe} alt="Access on Web" className="w-10" />
-              <div>
-                <p className="text-xs text-[#000000]">Available on the</p>
-                <h4 className="font-semibold text-[#000000]">Web</h4>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div className="flex justify-center md:justify-end mb-12">
+        <div className="flex justify-center md:justify-end px-2 mb-px-10 mb-1 md:mb-1 order-2">
           <img
             src={Clip}
             alt="Illustration showing milestone-based transaction management"
             className="w-full max-w-[380px] sm:max-w-[450px] md:max-w-[500px] h-auto"
           />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pb-6 md:pb-10 w-full max-w-[500px] justify-items-center md:justify-items-start text-center md:text-left order-3 md:col-span-1">
+          <div className="flex items-center gap-3">
+            <img src={Apple} alt="Download on App Store" className="w-10" />
+            <div>
+              <p className="text-xs text-[#000000]">Download on the</p>
+              <h4 className="font-semibold text-[#000000]">App Store</h4>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <img
+              src={Playstore}
+              alt="Download on Google Play"
+              className="w-10"
+            />
+            <div>
+              <p className="text-xs text-[#000000]">Get it on</p>
+              <h4 className="font-semibold text-[#000000]">Google Play</h4>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <img src={globe} alt="Access on Web" className="w-10" />
+            <div>
+              <p className="text-xs text-[#000000]">Available on the</p>
+              <h4 className="font-semibold text-[#000000]">Web</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
