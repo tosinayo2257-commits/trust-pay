@@ -57,8 +57,8 @@ export default function Build() {
       </div>
 
       {/* DOWNLOAD SECTION */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 max-w-[520px]">
-        <div className="flex items-center gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 max-w-[560px] justify-items-center md:justify-items-start md:mx-0">
+        <div className="flex items-center gap-3 justify-center md:justify-start">
           <img src={Apple} alt="Download on App Store" className="w-9" />
           <div>
             <p className="text-xs text-black">Download on the</p>
@@ -66,7 +66,7 @@ export default function Build() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 justify-center md:justify-start">
           <img src={Playstore} alt="Download on Google Play" className="w-9" />
           <div>
             <p className="text-xs text-black">Get it on</p>
@@ -74,7 +74,7 @@ export default function Build() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 justify-center md:justify-start">
           <img src={globe} alt="Available on Web" className="w-9" />
           <div>
             <p className="text-xs text-black">Available on the</p>

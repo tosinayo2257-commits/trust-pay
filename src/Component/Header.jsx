@@ -55,7 +55,7 @@ export default function Header() {
             <Button
               type="button"
               content="Sign Up"
-              className="bg-[#362FF6] text-white px-5 py-2 rounded-xl hover:bg-black"
+              className="bg-[#DEDEF2] text-[#362FF6] px-5 py-2 rounded-xl hover:bg-[#362FF6] hover:text-white"
             />
           </div>
         </div>
