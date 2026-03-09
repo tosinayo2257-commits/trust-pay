@@ -32,7 +32,7 @@ export default function Features() {
           </div>
 
           {/* Text */}
-          <div className="text-center md:text-right px-4 md:px-0">
+          <div className="text-start md:text-right px-4 md:px-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#000000]">
               Fair & Efficient Dispute Resolution
             </h2>
@@ -63,7 +63,7 @@ export default function Features() {
           </div>
 
           {/* Text */}
-          <div className="text-center md:text-left px-4 md:px-0 md:order-1">
+          <div className="text-start md:text-left px-4 md:px-0 md:order-1">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#000000]">
               Secure Digital Agreement Signatures
             </h2>
