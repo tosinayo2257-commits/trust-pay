@@ -7,15 +7,15 @@ export default function Features() {
     <section className="py-16 px8 md:px-10 relative">
       {/* Heading */}
       <div className="text-center mb-16 px-4">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
           Powerful Features, Seamless
           <br className="hidden md:block" />
           Experience
         </h1>
 
-        <p className="text-[#000000B2] max-w-2xl mx-auto">
+        <p className="text-[#000000B2] max-w-[800px] font-semibold mx-auto">
           TrustPay is equipped with robust tools designed to protect your
-          interests and simplify every stage of your agreements.
+          interests and simplify <br /> every stage of your agreements.
         </p>
       </div>
 

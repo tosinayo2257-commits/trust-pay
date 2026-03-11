@@ -1,87 +1,93 @@
 import React from "react";
-import trust from "../../assets/trust.png";
-import Button from "../Button";
-import Clip from "../../assets/Clip.png";
-import Apple from "../../assets/Apple.png";
-import Playstore from "../../assets/Playstore.png";
+import clip from "../../assets/Clip.png";
+import apple from "../../assets/Apple.png";
+import playstore from "../../assets/Playstore.png";
 import globe from "../../assets/globe-02.png";
-import { IoIosArrowForward } from "react-icons/io";
+import vector from "../../assets/vector-2.png";
+import { LiaGreaterThanSolid } from "react-icons/lia";
 
-export default function Build() {
+export default function TrustPayLanding() {
   return (
-    <section className="px-4 py-8 max-w-[1140px] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        {/* LEFT CONTENT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <h2 className="flex flex-wrap items-center justify-center md:justify-start text-3xl sm:text-4xl md:text-6xl font-bold text-[#0D0D0D] gap-2 leading-tight">
-            Build
-            <img
-              src={trust}
-              alt="Trust icon"
-              className="w-[90px] sm:w-[130px] md:w-[200px]"
-            />
-            in
-          </h2>
-
-          <p className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#0D0D0D] leading-tight">
+    <div className="min-h-[600px] text-gray-900 flex items-center">
+      {/* Hero Section */}
+      <section className="max-w-7xl mx-auto px-4 md:px-20 w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-18 items-center">
+        {/* Left Content */}
+        <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-outfit leading-tight">
+            Build{" "}
+            <span className="bg-[#DEDEF2] text-[#000000] px-3 sm:px-4 rounded-xl inline-flex items-center gap-2">
+              <img
+                src={vector}
+                alt="vector"
+                className="w-10 sm:w-14 h-10 sm:h-14"
+              />
+              Trust
+            </span>{" "}
+            in <br />
             Every Transaction.
-          </p>
+          </h1>
 
-          <p className="mt-4 text-[#000000B2] max-w-[560px] font-medium text-sm sm:text-base">
+          <p className="mt-3 text-gray-600 max-w-lg text-base sm:text-lg">
             Your all-in-one platform for digital agreements, milestone-based
             payments held in escrow, and swift dispute resolution. Focus on your
             work, we'll handle the trust.
           </p>
 
-          <div className="mt-6 w-full max-w-[240px]">
-            <Button
-              type="submit"
-              content={
-                <span className="flex items-center justify-center gap-2 text-sm sm:text-base">
-                  Get Started Now <IoIosArrowForward />
-                </span>
-              }
-              className="text-white bg-[#362FF6] px-6 py-3 rounded-xl shadow-md hover:bg-black w-full"
+          <button className="mt-8 w-fit flex items-center gap-2 bg-[#362FF6] text-white px-5 py-3 rounded-xl shadow hover:bg-indigo-700 transition">
+            Get Started Now
+            <LiaGreaterThanSolid className="inline-block" />
+          </button>
+
+          {/* Phone Image for Mobile */}
+          <div className="flex justify-center mt-8 md:hidden">
+            <img
+              src={clip}
+              alt="app preview"
+              className="w-[280px] sm:w-[320px] object-contain"
             />
           </div>
+
+          {/* Store Links */}
+          <div className=" flex flex-col md:flex-row flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-16 justify-center md:justify-start text-[#000000]">
+            <div className="flex items-center gap-3">
+              <img src={apple} alt="" className="w-8" />
+              <div>
+                <p className="text-xs font-medium text-[#000000]">
+                  Download on the
+                </p>
+                <p className="font-semibold text-xl">App Store</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <img src={playstore} alt="" className="w-8" />
+              <div>
+                <p className="text-xs font-medium text-[#000000]">Get it on</p>
+                <p className="font-semibold text-xl">Google Play</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <img src={globe} alt="" className="w-8" />
+              <div>
+                <p className="text-xs font-medium text-[#000000]">
+                  Available on the
+                </p>
+                <p className="font-semibold text-xl">Web</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* IMAGE */}
-        <div className="flex justify-center md:justify-end">
+        {/* Desktop Image */}
+        <div className="hidden md:flex justify-end">
           <img
-            src={Clip}
-            alt="Illustration showing milestone-based transaction management"
-            className="w-full max-w-[280px] sm:max-w-[380px] md:max-w-[500px] h-auto"
+            src={clip}
+            alt="app preview"
+            className="w-[470px] object-contain"
           />
         </div>
-      </div>
-
-      {/* DOWNLOAD SECTION */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 max-w-[560px] justify-items-center md:justify-items-start md:mx-0">
-        <div className="flex items-center gap-3 justify-center md:justify-start">
-          <img src={Apple} alt="Download on App Store" className="w-9" />
-          <div>
-            <p className="text-xs text-black">Download on the</p>
-            <h4 className="font-semibold text-black">App Store</h4>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3 justify-center md:justify-start">
-          <img src={Playstore} alt="Download on Google Play" className="w-9" />
-          <div>
-            <p className="text-xs text-black">Get it on</p>
-            <h4 className="font-semibold text-black">Google Play</h4>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3 justify-center md:justify-start">
-          <img src={globe} alt="Available on Web" className="w-9" />
-          <div>
-            <p className="text-xs text-black">Available on the</p>
-            <h4 className="font-semibold text-black">Web</h4>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

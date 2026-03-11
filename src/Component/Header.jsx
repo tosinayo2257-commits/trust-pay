@@ -10,36 +10,36 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50">
-      <div className="max-w-[1140px] mx-auto flex items-center justify-between px-4 py-4">
+      <div className="max-w-[1140px] mx-auto flex items-center justify-between px-4 py-3 mt-2">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
             src={Logo}
             alt="TrustPay Logo"
-            className="h-9 sm:h-10 object-contain"
+            className="h-9 sm:h-9 w-60 object-contain"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-30">
+        <div className="hidden md:flex items-center gap-68">
           <nav className="flex items-center gap-8">
             <Link
               to="/"
-              className="text-[#000022] font-medium hover:text-[#362FF6]"
+              className="text-[#000022] font-Regular  w-[39px] hover:text-[#362FF6]"
             >
               Home
             </Link>
 
             <Link
               to="/faq"
-              className="text-[#000022] font-medium hover:text-[#362FF6]"
+              className="text-[#000022] font-Regular  w-[39px] hover:text-[#362FF6]"
             >
               FAQs
             </Link>
 
             <Link
               to="/con"
-              className="text-[#000022] font-medium hover:text-[#362FF6]"
+              className="text-[#000022] font-Regular  w-[39px] hover:text-[#362FF6]"
             >
               Contact
             </Link>
