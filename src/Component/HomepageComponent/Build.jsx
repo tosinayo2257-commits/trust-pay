@@ -3,7 +3,7 @@ import clip from "../../assets/Clip.png";
 import apple from "../../assets/Apple.png";
 import playstore from "../../assets/Playstore.png";
 import globe from "../../assets/globe-02.png";
-import vector from "../../assets/vector-2.png";
+import vector from "../../assets/Vector-2.png";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 
 export default function TrustPayLanding() {
