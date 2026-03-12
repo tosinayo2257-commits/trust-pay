@@ -13,7 +13,7 @@ export default function Features() {
           Experience
         </h1>
 
-        <p className="text-[#000000B2] max-w-[800px] font-semibold mx-auto">
+        <p className="text-[#000000B2] max-w-[768px] h-[60px] mx-auto">
           TrustPay is equipped with robust tools designed to protect your
           interests and simplify <br /> every stage of your agreements.
         </p>
