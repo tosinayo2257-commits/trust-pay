@@ -8,11 +8,9 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 
 export default function TrustPayLanding() {
   return (
-    <div className="min-h-[580px] flex items-center text-gray-900">
+    <div className="min-h-[600px] flex items-center text-[#000000]">
       <section className="max-w-7xl mx-auto w-full px-5 sm:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* LEFT CONTENT */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          {/* Heading */}
           <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold font-outfit leading-tight">
             Build{" "}
             <span className="bg-[#DEDEF2] px-3 py-1 rounded-xl inline-flex items-center gap-2">
@@ -27,20 +25,17 @@ export default function TrustPayLanding() {
             Every Transaction.
           </h1>
 
-          {/* Paragraph */}
-          <p className="mt-4 text-gray-600 max-w-md text-sm sm:text-base lg:text-xl">
+          <p className="mt-2 text-[#000000B2] max-w-md text-sm sm:text-base lg:text-xl">
             Your all-in-one platform for digital agreements, milestone-based
             payments held in escrow, and swift dispute resolution. Focus on your
             work, we'll handle the trust.
           </p>
 
-          {/* Button */}
-          <button className="mt-6 flex items-center gap-2 bg-[#362FF6] text-white px-6 py-3 rounded-xl hover:bg-indigo-700 transition">
+          <button className="mt-6 flex items-center gap-2 bg-[#362FF6] text-[#FFFF] px-6 py-3 rounded-xl hover:bg-[#DEDEF2] hover:text-[#362FF6] transition">
             Get Started Now
             <LiaGreaterThanSolid />
           </button>
 
-          {/* MOBILE HERO IMAGE */}
           <div className="mt-10 md:hidden">
             <img
               src={clip}
@@ -49,8 +44,7 @@ export default function TrustPayLanding() {
             />
           </div>
 
-          {/* STORE LINKS */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 text-black">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 text-[#000000B2]">
             <div className="flex items-center gap-3 justify-center md:justify-start">
               <img src={apple} alt="" className="w-7" />
               <div>
@@ -77,7 +71,6 @@ export default function TrustPayLanding() {
           </div>
         </div>
 
-        {/* DESKTOP IMAGE */}
         <div className="hidden md:flex justify-end">
           <img
             src={clip}

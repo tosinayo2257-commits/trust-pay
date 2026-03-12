@@ -68,7 +68,7 @@ export default function FAQ() {
                 aria-expanded={isOpen}
                 className="w-full flex items-center justify-between gap-6 py-5 text-left"
               >
-                <span className="text-base md:text-lg font-bold text-6xl text-black leading-snug">
+                <span className="text-base md:text-lg font-bold text-6xl text-[#000000B2] leading-snug">
                   {faq.question}
                 </span>
 

@@ -8,21 +8,19 @@ export default function Deals() {
     <section className="px-5 sm:px-8 lg:px-16 py-10">
       <div className="max-w-7xl mx-auto h-[581px]">
         <div className="relative overflow-hidden rounded-3xl pt-10 bg-[#362FF6] grid grid-cols-1 md:grid-cols-2  gap-8 md:gap-10 sm:pt-6 md:pt-10 lg:pt-10 sm:pl-8 md:pl-8 lg:pl-10">
-          {/* LEFT CONTENT */}
-          <div className="text-white px-5 ">
+          <div className="text-[#FFFF] px-5 ">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">
               Securely Manage Your Deals
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg mb-8 text-white/80 max-w-lg mx-auto md:mx-0">
+            <p className="text-sm sm:text-base lg:text-lg mb-8 text-[#FFFFFF] max-w-lg mx-auto md:mx-0">
               From secure payments to clear agreements and fair resolutions,
               here’s how TrustPay empowers you.
             </p>
 
-            {/* FEATURES */}
             <div className="space-y-5 mb-8">
               <div className="flex items-start gap-3">
-                <div className="bg-white text-[#362FF6] rounded-lg w-7 h-7 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[#FFFF] text-[#362FF6] rounded-lg w-7 h-7 flex items-center justify-center flex-shrink-0">
                   <IoCheckmarkOutline size={18} />
                 </div>
 
@@ -35,7 +33,7 @@ export default function Deals() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="bg-white text-[#362FF6] rounded-lg w-7 h-7 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[#FFFF] text-[#362FF6] rounded-lg w-7 h-7 flex items-center justify-center flex-shrink-0">
                   <IoCheckmarkOutline size={18} />
                 </div>
 
@@ -46,7 +44,7 @@ export default function Deals() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="bg-white text-[#362FF6] rounded-lg w-7 h-7 flex items-center justify-center flex-shrink-0">
+                <div className="bg-[#FFFF] text-[#362FF6] rounded-lg w-7 h-7 flex items-center justify-center flex-shrink-0">
                   <IoCheckmarkOutline size={18} />
                 </div>
 
@@ -57,15 +55,13 @@ export default function Deals() {
               </div>
             </div>
 
-            {/* BUTTON */}
             <Button
               type="button"
               content="Get Started for Free"
-              className="h-12 mb-5 bg-white text-[#362FF6] font-semibold rounded-xl hover:bg-gray-200"
+              className="h-12 mb-5 bg-[#FFFF] text-[#362FF6] font-semibold rounded-xl hover:bg-gray-200"
             />
           </div>
 
-          {/* IMAGE */}
           <div className="flex justify-end">
             <img
               src={Raw}

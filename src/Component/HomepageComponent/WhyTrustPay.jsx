@@ -5,22 +5,19 @@ import Hand from "../../assets/Hand.png";
 export default function WhyTrustPay() {
   return (
     <section className="max-w-[1140px] mx-auto px-4 py-5">
-      {/* Section Header */}
       <div className="text-center mb-12 md:mb-10">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Why TrustPay?</h1>
 
-        <p className="text-gray-700 max-w-4xl mx-auto text-sm sm:text-[20px]">
+        <p className="text-[#000000B2] max-w-4xl mx-auto text-sm sm:text-[20px]">
           For businesses and freelancers, managing deals effectively means
           overcoming uncertainty. TradeTrust provides the secure framework you
           need.
         </p>
       </div>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-        {/* Card 1 */}
         <div className="rounded-3xl bg-[#362FF6] px-6 sm:px-8 pt-11 flex flex-col items-start text-left">
-          <h2 className="text[28px] md:text-[32px] font-bold mb-4 text-white">
+          <h2 className="text[28px] md:text-[32px] font-bold mb-4 text-[#FFFF]">
             Clear Milestone Management
           </h2>
 
@@ -38,9 +35,8 @@ export default function WhyTrustPay() {
           />
         </div>
 
-        {/* Card 2 */}
         <div className="rounded-3xl bg-[#DEDEF2] px-6 sm:px-6 pt-11 flex flex-col text-start md:text-left">
-          <h2 className="text-[20px] md:text-[32px] font-bold mb-3 text-black">
+          <h2 className="text-[20px] md:text-[32px] font-bold mb-3 text-[#000000B2]">
             Guaranteed Payment Security
           </h2>
 

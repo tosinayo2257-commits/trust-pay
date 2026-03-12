@@ -5,7 +5,6 @@ import Dark2 from "../../assets/Dark2.png";
 export default function Features() {
   return (
     <section className="py-16 px8 md:px-10 relative">
-      {/* Heading */}
       <div className="text-center mb-16 px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
           Powerful Features, Seamless
@@ -20,9 +19,7 @@ export default function Features() {
       </div>
 
       <div className="flex flex-col max-w-6xl mx-auto px-4 md:px-10 gap-20">
-        {/* Feature 1 */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-          {/* Image */}
           <div className="rounded-3xl bg-[#362FF6] flex justify-center mb-5 md:mb-5 pt-8 ">
             <img
               className="w-full max-w-[430px]"
@@ -31,7 +28,6 @@ export default function Features() {
             />
           </div>
 
-          {/* Text */}
           <div className="text-start md:text-right px-4 md:px-0">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#000000]">
               Fair & Efficient Dispute Resolution
@@ -45,15 +41,13 @@ export default function Features() {
               solutions so you can move forward.
             </p>
 
-            <button className="mt-8 bg-[#362FF6] hover:bg-black text-white font-medium px-6 py-3 rounded-xl transition">
+            <button className="mt-8 bg-[#362FF6] hover:bg-black text-[#FFFF] font-medium px-6 py-3 rounded-xl transition">
               Get Started
             </button>
           </div>
         </div>
 
-        {/* Feature 2 */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-          {/* Image */}
           <div className="rounded-3xl bg-[#362FF6] flex justify-center mb-5 md:mb-5 md:order-2">
             <img
               className="w-full max-w-[450px]"
@@ -62,7 +56,6 @@ export default function Features() {
             />
           </div>
 
-          {/* Text */}
           <div className="text-start md:text-left px-4 md:px-0 md:order-1">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-[#000000]">
               Secure Digital Agreement Signatures
@@ -75,7 +68,7 @@ export default function Features() {
               mutual understanding from the outset.
             </p>
 
-            <button className="mt-8 bg-[#362FF6] hover:bg-black text-white font-medium px-6 py-3 rounded-xl transition">
+            <button className="mt-8 bg-[#362FF6] hover:bg-[#DEDEF2] text-[#FFFF] hover:text-[#362FF6] font-medium px-6 py-3 rounded-xl transition">
               Get Started
             </button>
           </div>
