@@ -80,7 +80,7 @@ const Step = ({ step, reverse }) => {
 
 export default function HowItWorks() {
   return (
-    <section className="bg-[#FFFF] py-24 px-6 md:px-16">
+    <section className="bg-[#FFFF] py-18 px-6 md:px-16 md:py-20">
       <div className="max-w-6xl mx-auto text-center mb-20">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
           How It Works

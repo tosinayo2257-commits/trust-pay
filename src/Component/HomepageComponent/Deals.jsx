@@ -6,7 +6,7 @@ import { IoCheckmarkOutline } from "react-icons/io5";
 export default function Deals() {
   return (
     <section className="px-5 sm:px-8 lg:px-16 py-10">
-      <div className="max-w-7xl mx-auto h-[581px]">
+      <div className="max-w-7xl mx-auto ">
         <div className="relative overflow-hidden rounded-3xl pt-10 bg-[#362FF6] grid grid-cols-1 md:grid-cols-2  gap-8 md:gap-10 sm:pt-6 md:pt-10 lg:pt-10 sm:pl-8 md:pl-8 lg:pl-10">
           <div className="text-[#FFFF] px-5 ">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">

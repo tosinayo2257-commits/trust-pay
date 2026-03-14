@@ -98,13 +98,13 @@ export default function Header() {
               <Button
                 type="button"
                 content="Log In"
-                className="bg-[#DEDEF2] text-[#362FF6] py-2 rounded-xl w-full"
+                className="bg-[#DEDEF2] text-[#362FF6] hover:bg-[#362FF6] hover:text-[#FFFF] py-2 rounded-xl w-full"
               />
 
               <Button
                 type="button"
                 content="Sign Up"
-                className="bg-[#362FF6] text-[#FFFF] py-2 rounded-xl w-full"
+                className="bg-[#DEDEF2] text-[#362FF6] hover:bg-[#362FF6] hover:text-[#FFFF] py-2 rounded-xl w-full"
               />
             </div>
           </div>
