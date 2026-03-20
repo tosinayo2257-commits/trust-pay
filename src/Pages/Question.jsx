@@ -70,7 +70,7 @@ export default function Question() {
                 ${isOpen ? "bg-[#DEDEF2]" : "bg-[#FFFFFF]"}`}
                 onClick={() => toggleFAQ(index)}
               >
-                <div className="flex justify-between items-start gap-3">
+                <div className="flex justify-between items-start gap-2">
                   <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#0D0D0D] flex-1">
                     {faq.question}
                   </h3>

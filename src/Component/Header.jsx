@@ -69,7 +69,7 @@ export default function Header() {
 
       {menuOpen && (
         <div className="md:hidden border-t bg-white">
-          <div className="flex flex-col px-6 py-6 gap-5">
+          <div className="flex flex-col py-6 gap-5">
             <Link
               to="/"
               onClick={() => setMenuOpen(false)}
