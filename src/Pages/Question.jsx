@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FiPlus, FiMinus } from "react-icons/fi";
+import { FaPlus } from "react-icons/fa6";
+import { FiMinus } from "react-icons/fi";
 import Applayout from "../Layout/Applayout";
 
 export default function Question() {
@@ -69,18 +70,19 @@ export default function Question() {
                 ${isOpen ? "bg-[#DEDEF2]" : "bg-[#FFFFFF]"}`}
                 onClick={() => toggleFAQ(index)}
               >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg md:text-xl font-semibold text-[#0D0D0D]">
+                <div className="flex justify-between items-start gap-3">
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#0D0D0D] flex-1">
                     {faq.question}
                   </h3>
 
-                  {isOpen ? (
-                    <FiMinus className="text-xl" />
-                  ) : (
-                    <FiPlus className="text-xl" />
-                  )}
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center flex-shrink-0 mt-1">
+                    {isOpen ? (
+                      <FiMinus className="w-4 h-4 sm:w-5 sm:h-5" />
+                    ) : (
+                      <FaPlus className="w-4 h-4 sm:w-5 sm:h-5" />
+                    )}
+                  </div>
                 </div>
-
                 {isOpen && (
                   <p className="mt-4 text-[#808080] text-sm md:text-base leading-relaxed max-w-4xl">
                     {faq.answer}

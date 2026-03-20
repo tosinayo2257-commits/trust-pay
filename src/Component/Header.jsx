@@ -9,7 +9,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#FFFF] sticky top-0 z-50 ">
+    <header className="bg-[#FFFF] sticky top-0 z-50 px-5 md:px-0 ">
       <div className="max-w-295 mx-auto flex items-center justify-between py-4 sm:px-6 lg:px-8 py-6">
         <Link to="/" className="flex items-center">
           <img

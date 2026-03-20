@@ -43,8 +43,8 @@ export default function Contact() {
 
   return (
     <Applayout>
-      <div className="px-5 md:px-10">
-        <div className="bg-[#362FF6] rounded-xl p-6 md:p-20 max-w-xl sm:max-w-3xl md:max-w-6xl mx-auto mt-6">
+      <div className="px-2 md:px-10">
+        <div className="bg-[#362FF6] rounded-xl py-6 px-6 md:px-20 md:py-20 max-w-sm sm:max-w-3xl md:max-w-6xl mx-auto mt-6">
           <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-2 text-center">
             Contact Our Support Team
           </h1>
@@ -56,11 +56,13 @@ export default function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="max-w-xl sm:max-w-3xl md:max-w-6xl mx-auto mt-8 bg-white rounded-lg p-6 md:p-10 space-y-6"
+          className="max-w-xl sm:max-w-3xl md:max-w-6xl mx-auto mt-8 bg-white rounded-lg p-2 md:p-10 space-y-6"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col relative">
-              <label className="mb-1 font-medium text-black">Full Name</label>
+              <label className="mb-1 font-medium text-[#000000]">
+                Full Name
+              </label>
 
               <div className="relative">
                 <FaUser className="absolute left-3 top-1/2 -translate-y-1/2 text-[#909696]" />
@@ -78,7 +80,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col relative">
-              <label className="mb-1 font-medium text-black">Email</label>
+              <label className="mb-1 font-medium text-[#000000]">Email</label>
 
               <div className="relative">
                 <IoMdMail className="absolute left-3 top-1/2 -translate-y-1/2 text-[#909696]" />
@@ -97,7 +99,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col">
-            <label className="mb-1 font-medium text-black">
+            <label className="mb-1 font-medium text-[#000000]">
               Topic of complaint
             </label>
 
@@ -113,7 +115,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col">
-            <label className="mb-1 font-medium text-black">Message</label>
+            <label className="mb-1 font-medium text-[#000000]">Message</label>
 
             <textarea
               name="message"
@@ -134,7 +136,7 @@ export default function Contact() {
               className="mr-2 w-4 h-4 accent-[#362FF6]"
             />
 
-            <label className="text-sm text-black">
+            <label className="text-sm text-[#000000]">
               I agree with Tradetrust Terms of Use and Privacy Policy
             </label>
           </div>

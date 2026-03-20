@@ -7,7 +7,7 @@ export default function Experiences() {
   return (
     <section className="max-w-[1140px] mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#0D0D0D]">
+        <h2 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#0D0D0D]">
           Experiences Shared by Our Users
         </h2>
 

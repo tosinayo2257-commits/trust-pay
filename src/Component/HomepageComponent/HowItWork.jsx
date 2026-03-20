@@ -40,7 +40,7 @@ const steps = [
 const Step = ({ step, reverse }) => {
   return (
     <div
-      className="relative grid md:grid-cols-2 items-center gap-8 py-12"
+      className="relative grid md:grid-cols-2 items-center gap-8 py-0"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -63,10 +63,10 @@ const Step = ({ step, reverse }) => {
       </div>
 
       <div className="text-start md:flex flex-col justify-center pl-0 md:pl-18 w-full max-w-[420px] mx-auto md:mx-0">
-        <h3 className="text-2xl md:text-3xl font-bold mb-4 text-black">
+        <h3 className="text-2xl md:text-3xl font-bold mb-0 text-black">
           {step.title}
         </h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">{step.description}</p>
+        <p className="text-gray-600 mb-4 leading-relaxed">{step.description}</p>
 
         <Button
           type="submit"
@@ -80,8 +80,8 @@ const Step = ({ step, reverse }) => {
 
 export default function HowItWorks() {
   return (
-    <section className="bg-[#FFFF] py-18 px-6 md:px-16 md:py-20">
-      <div className="max-w-6xl mx-auto text-center mb-20">
+    <section className="bg-[#FFFF] py-0 px-6 md:px-16 md:py-20">
+      <div className="max-w-6xl mx-auto text-center mb-5">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">
           How It Works
         </h2>
