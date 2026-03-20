@@ -71,15 +71,15 @@ export default function Question() {
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between items-start gap-2">
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-[#0D0D0D] flex-1">
+                  <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#0D0D0D] flex-1">
                     {faq.question}
                   </h3>
 
                   <div className="w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center flex-shrink-0 mt-1">
                     {isOpen ? (
-                      <FiMinus className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <FiMinus className="w-3 h-4 sm:w-4 sm:h-5" />
                     ) : (
-                      <FaPlus className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <FaPlus className="w-3 h-4 sm:w-4 sm:h-5" />
                     )}
                   </div>
                 </div>
