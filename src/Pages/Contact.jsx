@@ -48,7 +48,7 @@ export default function Contact() {
           <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-2 text-center">
             Contact Our Support Team
           </h1>
-          <p className="font-semibold text-white text-center text-[15px] md:text-[18px]">
+          <p className="font-semibold text-white text-center text-[13px] md:text-[18px]">
             Have a specific question or need assistance? Reach out to our
             dedicated support team.
           </p>
