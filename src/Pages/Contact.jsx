@@ -56,7 +56,7 @@ export default function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="max-w-xl sm:max-w-3xl md:max-w-6xl mx-auto mt-8 bg-white rounded-lg p-2 md:p-10 space-y-6"
+          className="max-w-xl sm:max-w-3xl md:max-w-6xl mx-auto mt-8 bg-white rounded-lg p-2 md:p-0 space-y-6"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col relative">

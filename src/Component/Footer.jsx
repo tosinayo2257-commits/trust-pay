@@ -2,8 +2,8 @@ import React from "react";
 import Button from "./Button";
 import Input from "./Input";
 import Logo from "../assets/Logo.png";
-import { BiLogoWhatsappSquare } from "react-icons/bi";
-import { BsTelegram } from "react-icons/bs";
+import { LiaWhatsapp } from "react-icons/lia";
+import { RiTelegram2Fill } from "react-icons/ri";
 import { Link } from "react-router";
 
 export default function Footer() {
@@ -42,9 +42,14 @@ export default function Footer() {
             className="w-[160px] md:w-[210px]"
           />
 
-          <div className="flex gap-4 text-[#03022A] mt-8">
-            <BsTelegram size={45} />
-            <BiLogoWhatsappSquare size={45} />
+          <div className="flex items-center gap-4 mt-8 text-[#FFFFFF]">
+            <div className="w-12 h-12 flex items-center justify-center bg-[#03022A] rounded-full">
+              <RiTelegram2Fill size={25} />
+            </div>
+
+            <div className="w-12 h-12 flex items-center justify-center bg-[#03022A] rounded-full">
+              <LiaWhatsapp size={25} />
+            </div>
           </div>
         </div>
 

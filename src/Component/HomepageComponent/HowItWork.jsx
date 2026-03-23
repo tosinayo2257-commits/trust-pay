@@ -46,9 +46,9 @@ const Step = ({ step, reverse }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <div className="hidden md:block absolute left-1/2 top-2 border-1 h-full w-[2px] bg-[#FFFF]" />
+      <div className="hidden md:block absolute left-1/2 top-2 border-1 border-gray-100 h-80 bg-[#FFFF]" />
 
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-black text-[#FFFF] w-10 h-10 rounded-full hidden md:flex items-center justify-center font-semibold shadow-lg">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-[#070541] text-[#FFFF] w-10 h-10 rounded-full hidden md:flex items-center justify-center font-semibold shadow-lg">
         {step.id}
       </div>
 
