@@ -26,7 +26,7 @@ export default function TrustPayLanding() {
               Every Transaction.
             </h1>
 
-            <p className="mt-2 text-[#000000B2] max-w-md text-sm sm:text-base lg:text-xl">
+            <p className="mt-2 text-[#000000B2] max-w- text-sm sm:text-base lg:text-xl">
               Your all-in-one platform for digital agreements, milestone-based
               payments held in escrow, and swift dispute resolution. Focus on
               your work, we'll handle the trust.
