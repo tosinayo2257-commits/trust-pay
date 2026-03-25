@@ -41,7 +41,7 @@ export default function Features() {
               solutions so you can move forward.
             </p>
 
-            <button className="mt-8 bg-[#362FF6] hover:bg-black text-[#FFFF] font-medium px-6 py-3 rounded-xl transition">
+            <button className="mt-8 bg-[#362FF6] hover:bg-[#DEDEF2] text-[#FFFF] hover:text-[#362FF6] font-medium px-6 py-3 rounded-xl transition">
               Get Started
             </button>
           </div>
